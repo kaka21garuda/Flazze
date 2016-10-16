@@ -83,6 +83,14 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        //when the editing is .delete
+        if editingStyle == .delete {
+            let post = posts[indexPath.row]
+            //remove post with a specific indexPath from the database
+            post.dataRef?.removeValue()
+        }
+    }
     
 
 }
