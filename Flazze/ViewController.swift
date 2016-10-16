@@ -91,6 +91,7 @@ class ViewController: UITableViewController {
     }
 
     @IBAction func addButton(_ sender: AnyObject) {
+        let userName = FIRAuth.auth()?.currentUser?.email
         let alert = UIAlertController(title: "New Post", message: "Enter you post here!", preferredStyle: .alert)
         alert.addTextField { (textfield) in
             textfield.placeholder = "Your Post"
@@ -99,7 +100,7 @@ class ViewController: UITableViewController {
             //to grab the post that the user has already type in 
             if let postContent = alert.textFields?.first?.text {
                 // this is the post object that can be passed to Firebase Database
-                let post  = Post(content: postContent, addedByUser: "user")
+                let post  = Post(content: postContent, addedByUser: userName!)
                 
                 let postRef = self.dbRef.child(postContent.lowercased())
                 
