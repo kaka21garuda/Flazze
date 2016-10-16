@@ -13,13 +13,35 @@ import FirebaseAuth
 class ViewController: UITableViewController {
     
     var dbRef: FIRDatabaseReference!
+    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
        
         dbRef = FIRDatabase.database().reference().child("post-items")
         
+        startObservingDB()
+        
     }
+    
+    
+    func startObservingDB() {
+        dbRef.observe(.value, with: { (snapshot) in
+            var newPosts = [Post]()
+            
+            for post in snapshot.children {
+                let postObject = Post(snapshot: post as! FIRDataSnapshot)
+                newPosts.append(postObject)
+            }
+            
+            self.posts = newPosts
+            self.tableView.reloadData()
+            
+            }) { (error) in
+                print(error)
+        }
+    }
+    
 
     @IBAction func addButton(_ sender: AnyObject) {
         let alert = UIAlertController(title: "New Post", message: "Enter you post here!", preferredStyle: .alert)
@@ -48,11 +70,16 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return posts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let post = posts[indexPath.row]
+        
+        cell.textLabel?.text = post.content
+        cell.detailTextLabel?.text = post.addedByUser
         return cell
     }
     
