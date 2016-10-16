@@ -1,0 +1,6 @@
+framework module Pods_Flazze {
+  umbrella header "Pods-Flazze-umbrella.h"
+
+  export *
+  module * { export * }
+}

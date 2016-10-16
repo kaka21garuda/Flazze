@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import Flazze
 
 class FlazzeTests: XCTestCase {
     

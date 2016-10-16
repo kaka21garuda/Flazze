@@ -14,6 +14,8 @@
 		C60DE3B11DB330A9005B88CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60DE3AF1DB330A9005B88CF /* LaunchScreen.storyboard */; };
 		C60DE3BC1DB330A9005B88CF /* FlazzeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DE3BB1DB330A9005B88CF /* FlazzeTests.swift */; };
 		C60DE3C71DB330A9005B88CF /* FlazzeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DE3C61DB330A9005B88CF /* FlazzeUITests.swift */; };
+		C60DE3D51DB3314C005B88CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60DE3D41DB3314C005B88CF /* GoogleService-Info.plist */; };
+		CF7CE89DAAA4F0B770BFD334 /* Pods_Flazze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7FEC2C5A37305013A3D095 /* Pods_Flazze.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08154565DE8957B2B8ED6B8C /* Pods_FlazzeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlazzeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7FEC2C5A37305013A3D095 /* Pods_Flazze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flazze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8320C8185865C99AB69CF437 /* Pods-Flazze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flazze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flazze/Pods-Flazze.debug.xcconfig"; sourceTree = "<group>"; };
+		AE9B9726E5384EC4BC2CACF2 /* Pods-Flazze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flazze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flazze/Pods-Flazze.release.xcconfig"; sourceTree = "<group>"; };
 		C60DE3A31DB330A9005B88CF /* Flazze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flazze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60DE3A61DB330A9005B88CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C60DE3A81DB330A9005B88CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		C60DE3C21DB330A9005B88CF /* FlazzeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlazzeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60DE3C61DB330A9005B88CF /* FlazzeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlazzeUITests.swift; sourceTree = "<group>"; };
 		C60DE3C81DB330A9005B88CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C60DE3D41DB3314C005B88CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1C72C952F1A573065FDBEDF /* Pods_FlazzeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlazzeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7CE89DAAA4F0B770BFD334 /* Pods_Flazze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 				C60DE3BA1DB330A9005B88CF /* FlazzeTests */,
 				C60DE3C51DB330A9005B88CF /* FlazzeUITests */,
 				C60DE3A41DB330A9005B88CF /* Products */,
+				C9FC640D21A0FAE8195FD424 /* Pods */,
+				D3C973263034348D4CA9EB96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +108,7 @@
 		C60DE3A51DB330A9005B88CF /* Flazze */ = {
 			isa = PBXGroup;
 			children = (
+				C60DE3D41DB3314C005B88CF /* GoogleService-Info.plist */,
 				C60DE3A61DB330A9005B88CF /* AppDelegate.swift */,
 				C60DE3A81DB330A9005B88CF /* ViewController.swift */,
 				C60DE3AA1DB330A9005B88CF /* Main.storyboard */,
@@ -125,6 +137,25 @@
 			path = FlazzeUITests;
 			sourceTree = "<group>";
 		};
+		C9FC640D21A0FAE8195FD424 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8320C8185865C99AB69CF437 /* Pods-Flazze.debug.xcconfig */,
+				AE9B9726E5384EC4BC2CACF2 /* Pods-Flazze.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3C973263034348D4CA9EB96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7FEC2C5A37305013A3D095 /* Pods_Flazze.framework */,
+				08154565DE8957B2B8ED6B8C /* Pods_FlazzeTests.framework */,
+				F1C72C952F1A573065FDBEDF /* Pods_FlazzeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C60DE3CB1DB330A9005B88CF /* Build configuration list for PBXNativeTarget "Flazze" */;
 			buildPhases = (
+				BF63A759727B413F303B91E3 /* [CP] Check Pods Manifest.lock */,
 				C60DE39F1DB330A8005B88CF /* Sources */,
 				C60DE3A01DB330A8005B88CF /* Frameworks */,
 				C60DE3A11DB330A8005B88CF /* Resources */,
+				13BA1C1E0F35D8D44D905BE4 /* [CP] Embed Pods Frameworks */,
+				AC3C513D76C5CA4BAF43F46E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +271,7 @@
 			files = (
 				C60DE3B11DB330A9005B88CF /* LaunchScreen.storyboard in Resources */,
 				C60DE3AE1DB330A9005B88CF /* Assets.xcassets in Resources */,
+				C60DE3D51DB3314C005B88CF /* GoogleService-Info.plist in Resources */,
 				C60DE3AC1DB330A9005B88CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13BA1C1E0F35D8D44D905BE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flazze/Pods-Flazze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC3C513D76C5CA4BAF43F46E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flazze/Pods-Flazze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF63A759727B413F303B91E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C60DE39F1DB330A8005B88CF /* Sources */ = {
@@ -413,6 +496,7 @@
 		};
 		C60DE3CC1DB330A9005B88CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8320C8185865C99AB69CF437 /* Pods-Flazze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TRR5Q7F2CV;
@@ -426,6 +510,7 @@
 		};
 		C60DE3CD1DB330A9005B88CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE9B9726E5384EC4BC2CACF2 /* Pods-Flazze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TRR5Q7F2CV;
@@ -514,6 +599,7 @@
 				C60DE3CD1DB330A9005B88CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C60DE3CE1DB330A9005B88CF /* Build configuration list for PBXNativeTarget "FlazzeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +608,7 @@
 				C60DE3D01DB330A9005B88CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C60DE3D11DB330A9005B88CF /* Build configuration list for PBXNativeTarget "FlazzeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +617,7 @@
 				C60DE3D31DB330A9005B88CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
