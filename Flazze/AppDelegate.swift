@@ -20,13 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         
        
-        FIRAuth.auth()?.signIn(withEmail: "kaka10garuda@gmail.com", password: "usa12345", completion: { (user, error) in
-            if error == nil {
-               print(user?.email)
-            } else {
-                print(error?.localizedDescription)
-            }
-        })
+//        FIRAuth.auth()?.signIn(withEmail: "kaka10garuda@gmail.com", password: "usa12345", completion: { (user, error) in
+//            if error == nil {
+//               print(user?.email)
+//            } else {
+//                print(error?.localizedDescription)
+//            }
+//        })
         
         return true
     }
