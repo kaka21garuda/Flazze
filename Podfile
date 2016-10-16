@@ -8,6 +8,7 @@ target 'Flazze' do
   # Pods for Flazze
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 
 

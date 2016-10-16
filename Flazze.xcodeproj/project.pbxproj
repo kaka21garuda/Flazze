@@ -15,6 +15,8 @@
 		C60DE3BC1DB330A9005B88CF /* FlazzeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DE3BB1DB330A9005B88CF /* FlazzeTests.swift */; };
 		C60DE3C71DB330A9005B88CF /* FlazzeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DE3C61DB330A9005B88CF /* FlazzeUITests.swift */; };
 		C60DE3D51DB3314C005B88CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60DE3D41DB3314C005B88CF /* GoogleService-Info.plist */; };
+		C62B061A1DB33C30006A2F2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B06191DB33C30006A2F2E /* User.swift */; };
+		C62B061C1DB33E24006A2F2E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B061B1DB33E24006A2F2E /* Post.swift */; };
 		CF7CE89DAAA4F0B770BFD334 /* Pods_Flazze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7FEC2C5A37305013A3D095 /* Pods_Flazze.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		C60DE3C61DB330A9005B88CF /* FlazzeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlazzeUITests.swift; sourceTree = "<group>"; };
 		C60DE3C81DB330A9005B88CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C60DE3D41DB3314C005B88CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C62B06191DB33C30006A2F2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C62B061B1DB33E24006A2F2E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		F1C72C952F1A573065FDBEDF /* Pods_FlazzeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlazzeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,8 @@
 				C60DE3D41DB3314C005B88CF /* GoogleService-Info.plist */,
 				C60DE3A61DB330A9005B88CF /* AppDelegate.swift */,
 				C60DE3A81DB330A9005B88CF /* ViewController.swift */,
+				C62B06191DB33C30006A2F2E /* User.swift */,
+				C62B061B1DB33E24006A2F2E /* Post.swift */,
 				C60DE3AA1DB330A9005B88CF /* Main.storyboard */,
 				C60DE3AD1DB330A9005B88CF /* Assets.xcassets */,
 				C60DE3AF1DB330A9005B88CF /* LaunchScreen.storyboard */,
@@ -347,6 +353,8 @@
 			files = (
 				C60DE3A91DB330A9005B88CF /* ViewController.swift in Sources */,
 				C60DE3A71DB330A9005B88CF /* AppDelegate.swift in Sources */,
+				C62B061A1DB33C30006A2F2E /* User.swift in Sources */,
+				C62B061C1DB33E24006A2F2E /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
