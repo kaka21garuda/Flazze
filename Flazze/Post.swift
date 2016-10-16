@@ -43,6 +43,12 @@ struct Post {
         }
         
         
+        
+        
+    }
+    
+    func toAnyObject() -> NSDictionary {
+        return ["content": content, "addedByUser": addedByUser]
     }
     
 }
